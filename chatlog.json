@@ -1,0 +1,64 @@
+{
+  "id": "resp_68596ce5148c8192a7390e8da44fed5905780dc3a97eb3ef",
+  "object": "response",
+  "created_at": 1750691045,
+  "status": "completed",
+  "background": false,
+  "error": null,
+  "incomplete_details": null,
+  "instructions": "You're a tool for b2b saas companies to add documentation to their code.",
+  "max_output_tokens": null,
+  "model": "o3-mini-2025-01-31",
+  "output": [
+    {
+      "id": "rs_68596ce7f7a4819280e0dbfc635d01ab05780dc3a97eb3ef",
+      "type": "reasoning",
+      "summary": []
+    },
+    {
+      "id": "msg_68596ce8552c8192916a6bc3d607c30f05780dc3a97eb3ef",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "text": "Below is the same function with added documentation using JSDoc comments. This documentation explains what the function does, as well as details about its parameters and return value:\n\n------------------------------------------------\n/**\n * Splits a string into three parts based on the first occurrence of a specified delimiter.\n *\n * This function searches for the first occurrence of the delimiter within the provided string.\n * If the delimiter is found, the string is divided into three parts:\n *   1. The substring before the delimiter.\n *   2. The delimiter itself.\n *   3. The substring after the delimiter.\n *\n * If the delimiter is not found, the function returns an array with the original string as the first\n * element, and empty strings for the second and third elements.\n *\n * @param {string} str - The input string to partition.\n * @param {string} delimiter - The delimiter that determines the splitting point.\n * @returns {[string, string, string]} An array containing:\n *    [0] the substring before the delimiter,\n *    [1] the delimiter (or an empty string if not found),\n *    [2] the substring after the delimiter (or an empty string if not found).\n */\nfunction partition(str: string, delimiter: string): [string, string, string] {\n  const index = str.indexOf(delimiter);\n  if (index !== -1) {\n    return [str.substring(0, index), delimiter, str.substring(index + delimiter.length)];\n  }\n  return [str, '', ''];\n}\n------------------------------------------------\n\nThis documentation can help developers understand the purpose, behavior, and usage of the function in a B2B SaaS environment."
+        }
+      ],
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "previous_response_id": null,
+  "reasoning": {
+    "effort": "medium",
+    "summary": null
+  },
+  "service_tier": "default",
+  "store": true,
+  "temperature": 1,
+  "text": {
+    "format": {
+      "type": "text"
+    }
+  },
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 1,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 94,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 596,
+    "output_tokens_details": {
+      "reasoning_tokens": 256
+    },
+    "total_tokens": 690
+  },
+  "user": null,
+  "metadata": {},
+  "output_text": "Below is the same function with added documentation using JSDoc comments. This documentation explains what the function does, as well as details about its parameters and return value:\n\n------------------------------------------------\n/**\n * Splits a string into three parts based on the first occurrence of a specified delimiter.\n *\n * This function searches for the first occurrence of the delimiter within the provided string.\n * If the delimiter is found, the string is divided into three parts:\n *   1. The substring before the delimiter.\n *   2. The delimiter itself.\n *   3. The substring after the delimiter.\n *\n * If the delimiter is not found, the function returns an array with the original string as the first\n * element, and empty strings for the second and third elements.\n *\n * @param {string} str - The input string to partition.\n * @param {string} delimiter - The delimiter that determines the splitting point.\n * @returns {[string, string, string]} An array containing:\n *    [0] the substring before the delimiter,\n *    [1] the delimiter (or an empty string if not found),\n *    [2] the substring after the delimiter (or an empty string if not found).\n */\nfunction partition(str: string, delimiter: string): [string, string, string] {\n  const index = str.indexOf(delimiter);\n  if (index !== -1) {\n    return [str.substring(0, index), delimiter, str.substring(index + delimiter.length)];\n  }\n  return [str, '', ''];\n}\n------------------------------------------------\n\nThis documentation can help developers understand the purpose, behavior, and usage of the function in a B2B SaaS environment."
+}
