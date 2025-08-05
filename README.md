@@ -36,8 +36,8 @@ A Node.js project for fetching GitHub repository files and automatically generat
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/nostromos/github_file_parsing_test.git
-cd github_file_parsing_test
+git clone https://github.com/nostromos/gitsplain.git
+cd gitsplain
 ```
 
 2. Install dependencies:
@@ -78,7 +78,7 @@ const response = await openai.chat.completions.create({
 ## Project Structure
 
 ```
-github_file_parsing_test/
+gitsplain/
 ├── index.js          # Main application file
 ├── streaming.ts      # Example processed TypeScript file with AI-generated docs
 ├── chatlog.json      # Chat/processing logs
@@ -97,8 +97,8 @@ node index.js
 
 ## License
 
-MIT - See package.json for details
+MIT - See [LICENSE](./LICENSE) for details
 
 ## Author
 
-Michael Monaghan <michael@monaghan.nyc>
+[Michael Monaghan](mailto:michael@monaghan.nyc)
