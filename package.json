@@ -1,7 +1,7 @@
 {
   "name": "gitsplain",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A Node.js project for fetching GitHub repository files and automatically generating code documentation using AI.",
   "license": "MIT",
   "author": "Michael Monaghan <michael@monaghan.nyc>",
   "type": "module",
